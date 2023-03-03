@@ -11,6 +11,9 @@
             </el-form-item>
             <el-form-item>
                 <el-button type="primary" size ="mini" icon="search" @click='onScreeoutMoney("search_data")'>筛选</el-button>
+           
+            </el-form-item>            <el-form-item>
+                <el-button type="primary" size ="mini" icon="search" @click='put'>输出excle</el-button>
             </el-form-item>
 
             <el-form-item class="btnRight">
@@ -61,6 +64,9 @@
           },
           onBatchDelMoney(){
               this.$emit("onBatchDelMoney");
+          },
+          put() {
+            this.$emit("put");
           }
       }
   }
